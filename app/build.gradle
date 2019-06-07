@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "spu.aprendizajemovil"
+        minSdkVersion 19
+        targetSdkVersion 27
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:appcompat-v7:21.0.3'
+    implementation 'com.github.Shashank02051997:FancyWalkthrough-Android:2.1'
+    implementation 'com.google.android.gms:play-services-vision:11.+'
+    implementation('com.android.support:recyclerview-v7:22.2.1') {
+        exclude module: 'support-v4' //by artifact name
+        exclude group: 'com.android.support' //by group
+        exclude module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'support-v4' //by both name and group
+
+    }
+    implementation 'com.google.code.gson:gson:2.3.1'
+    implementation 'me.dm7.barcodescanner:zxing:1.9'
+    implementation 'com.github.msayan:tutorial-view:v1.0.6'
+}

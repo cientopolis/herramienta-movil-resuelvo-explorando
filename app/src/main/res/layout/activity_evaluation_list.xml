@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E6EEFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/evaluationsImage"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_toLeftOf="@+id/evaluationListTitle"
+            android:src="@drawable/evaluation_image" />
+
+        <TextView
+            android:id="@+id/evaluationListTitle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/evaluationListTitle"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/evaluationSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/evaluationSubtitle"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical" >
+
+        <!-- <RelativeLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="0.03" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/evaluationTasksTitle" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:text="@string/evaluationTasksTitle" -->
+        <!-- android:textSize="18sp" -->
+        <!-- android:layout_margin="5dp"/> -->
+        <!-- </RelativeLayout> -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:id="@+id/tasksListLayout">
+<!-- sacados de arriba -->
+<!--             android:layout_marginBottom="5dp" -->
+<!--             android:layout_marginTop="5dp"  -->
+            <ListView
+                android:id="@+id/tasksList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:fadeScrollbars="false"
+                android:textSize="18sp" >
+            </ListView>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/linea"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        <!-- <RelativeLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="0.03" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/evaluationDepositsTitle" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:text="@string/evaluationDepositsTitle" -->
+        <!-- android:textSize="18sp" -->
+        <!-- android:layout_margin="5dp"/> -->
+        <!-- </RelativeLayout> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_weight="1"
+            android:id="@+id/depositsListLayout">
+<!-- sacados de arriba -->
+<!--             android:layout_marginBottom="5dp" -->
+<!--             android:layout_marginTop="5dp" -->
+            <ListView
+                android:id="@+id/depositsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:fadeScrollbars="false"
+                android:textSize="18sp" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/evaluateBackButton"
+            style="@style/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/blue_button"
+            android:onClick="goBack"
+            android:text="@string/evaluationReturnButton"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:width="200dp" />
+
+        <Button
+            android:id="@+id/boton_desempenio"
+            style="@style/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:width="200dp"
+            android:background="@drawable/blue_button"
+            android:onClick="sentAMail"
+            android:text="Compartir mi desempeño" />
+    </LinearLayout>
+
+</LinearLayout>

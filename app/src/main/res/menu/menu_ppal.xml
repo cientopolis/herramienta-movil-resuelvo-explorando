@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/abrirBolsa"
+    android:title="Abrir bolsa" />
+<item
+    android:title="Pedir ayuda"
+    android:id="@+id/pedirAyuda" />
+<item
+    android:title="Ver desempeño"
+    android:id="@+id/verDesempenio" />
+</menu>

@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EEFF"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/botonesFondo"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/rLTextMain"
+            android:layout_alignParentTop="true"
+            >
+
+                    <TextView
+                        android:id="@+id/textMain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/you_finished_task"
+                        android:textColor="#111111"
+                        android:gravity="center"
+                        android:textAlignment="gravity"
+                        android:textSize="23sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/rLTextMain"
+            android:id="@+id/rLSecText">
+
+                    <TextView
+                        android:id="@+id/textSub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:text="@string/deposit_or_go_to_next_task"
+                        android:textColor="#111111"
+                        android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/questionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@id/rLSecText"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/questionMarkImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/question_mark" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/questionMarkImage"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="@string/where_do_you_want_to_go"
+                android:textColor="#111111"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/botonesFondo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="0dp"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/nextTaskButton"
+            style="@style/button_text"
+            android:layout_column="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button"
+            android:onClick="nextTask"
+            android:text="@string/go_to_next_task"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/openDepositsButton"
+            style="@style/button_text"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button"
+            android:onClick="openDepositsView"
+            android:text="@string/to_deposit"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/openResume"
+            style="@style/button_text"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button"
+            android:onClick="showUsersEvaluations"
+            android:text="Ver desempeño"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

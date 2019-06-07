@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<PrototypeData>
+    <EducationalActivities>
+        <EducationalActivity>
+			<Name>¡Aprendo Jugando!</Name>
+			<Goal>El objetivo del juego es recolectar elementos de acuerdo a una tarea recibida, para luego depositarlos según el tipo de material con el que están hechos.</Goal>
+			<Code>E1</Code>
+			<Tasks>
+				<Task>task1</Task>
+				<Task>task2</Task>
+				<Task>task3</Task>
+			</Tasks>
+		</EducationalActivity>
+    </EducationalActivities>
+	
+	<Tasks>
+		<Task>
+			<Name>task1</Name>
+			<Description>Deberán recolectar todos los elementos que se puedan usar para hacer papel reciclado.</Description>
+			<Code>task1</Code>
+			<ValidElements>
+				<Element>cajaDeCereal</Element>
+				<Element>hojaDeCuaderno</Element>
+				<Element>tuboDeRolloDePapel</Element>
+				<Element>cajaParaHuevos</Element>
+			</ValidElements>
+			<Elements>
+				<Element>cajaDeCereal</Element>
+				<Element>hojaDeCuaderno</Element>
+				<Element>sachetDeLeche</Element>
+				<Element>tuboDeRolloDePapel</Element>
+				<Element>envaseDeYogurth</Element>
+				<Element>envaseDeGaseosa</Element>
+				<Element>envaseDeGaseosa</Element>
+				<Element>perchaGrande</Element>
+				<Element>vasoGrande</Element>
+				<Element>vasoChico</Element>
+				<Element>cajaParaHuevos</Element>
+			</Elements>
+		</Task>
+		
+		<Task>
+			<Name>task2</Name>
+			<Description>Deberán recolectar todos los elementos que se puedan usar para envasar líquidos.</Description>
+			<Code>task2</Code>
+			<ValidElements>
+				<Element>botellaDeGaseosa</Element>
+				<Element>botellaDeLeche</Element>
+				<Element>envaseDeGaseosa</Element>
+				<Element>botellaChica</Element>
+			</ValidElements>
+			<Elements>
+				<Element>botellaDeGaseosa</Element>
+				<Element>botellaDeLeche</Element>
+				<Element>cajaDeZapatos</Element>
+				<Element>platoDescartable</Element>
+				<Element>coladorDePasta</Element>
+				<Element>envaseDeGaseosa</Element>
+				<Element>botellaChica</Element>
+				<Element>rolloGrande</Element>
+				<Element>rolloChico</Element>
+				<Element>sobreGrande</Element>
+			</Elements>
+		</Task>
+		
+		<Task>
+			<Name>task3</Name>
+			<Description>Deberán recolectar todos los elementos que se puedan usar para medir distancia en centímetros.</Description>
+			<Code>task3</Code>
+			<ValidElements>
+				<Element>reglaGrande</Element>
+				<Element>escuadra</Element>
+			</ValidElements>
+			<Elements>
+				<Element>reglaGrande</Element>
+				<Element>vasoMedidorGrande</Element>
+				<Element>transportador</Element>
+				<Element>vasoGrande</Element>
+				<Element>botellaDeGaseosa</Element>
+				<Element>escuadra</Element>
+				<Element>botellaGrande</Element>
+				<Element>botellaMedianaBlanca</Element>
+				<Element>botellaMedianaRoja</Element>
+				<Element>lataDeTomate</Element>
+				<Element>envaseDePostreChico</Element>
+				<Element>vasoChico</Element>
+			</Elements>
+		</Task>	
+	</Tasks>
+	
+	<Deposits>
+		<Deposit>
+			<Name>Cartón/Papel</Name>
+			<Description>Cartón/Papel</Description>
+			<Code>depositoPapel</Code>
+		</Deposit>
+		<Deposit>
+			<Name>Plástico</Name>
+			<Description>Plástico</Description>
+			<Code>depositoPlastico</Code>
+		</Deposit>
+		<Deposit>
+			<Name>Metal</Name>
+			<Description>Metal</Description>
+			<Code>depositoMetal</Code>
+		</Deposit>
+	</Deposits>
+	
+	<Elements>
+		<Element>
+			<Name>Caja de Cereal</Name>
+			<Description>Caja de cartón tipo cereales o similar</Description>
+			<Code>cajaDeCereal</Code>
+			<Deposits>
+				<Deposit>depositoPapel</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Hoja de Cuaderno</Name>
+			<Description>Hoja de cuaderno escolar usada -escrita-</Description>
+			<Code>hojaDeCuaderno</Code>
+			<Deposits>
+				<Deposit>depositoPapel</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Sachet de Leche</Name>
+			<Description>Sachet de Leche</Description>
+			<Code>sachetDeLeche</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Envase de Yogurth</Name>
+			<Description>Envase de yogurth sin etiqueta</Description>
+			<Code>envaseDeYogurth</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Tubo de Rollo de Papel</Name>
+			<Description>Rollo de papel cocina</Description>
+			<Code>tuboDeRolloDePapel</Code>
+			<Deposits>
+				<Deposit>depositoPapel</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Envase de Gaseosa</Name>
+			<Description>Lata de aluminio de gaseosa</Description>
+			<Code>envaseDeGaseosa</Code>
+			<Deposits>
+				<Deposit>depositoMetal</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Percha Grande</Name>
+			<Description>Percha de plástico</Description>
+			<Code>perchaGrande</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Vaso Grande</Name>
+			<Description>Vaso de metal</Description>
+			<Code>vasoGrande</Code>
+			<Deposits>
+				<Deposit>depositoMetal</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Vaso Chico</Name>
+			<Description>Vaso descartable chico</Description>
+			<Code>vasoChico</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+		<Element>
+			<Name></Name>
+			<Description></Description>
+			<Code></Code>
+			<Deposits>
+				<Deposit></Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Caja para Huevos</Name>
+			<Description>Caja contenedora de huevos por 6 unidades</Description>
+			<Code>cajaParaHuevos</Code>
+			<Deposits>
+				<Deposit>depositoPapel</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Botella de Gaseosa</Name>
+			<Description>Botella de plástico de 600cm3 transparente</Description>
+			<Code>botellaDeGaseosa</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Botella de Leche</Name>
+			<Description>Botella plástica de leche de 1 litro</Description>
+			<Code>botellaDeLeche</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Caja de Zapatos</Name>
+			<Description>Caja de cartón de zapatos</Description>
+			<Code>cajaDeZapatos</Code>
+			<Deposits>
+				<Deposit>depositoPapel</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name></Name>
+			<Description></Description>
+			<Code></Code>
+			<Deposits>
+				<Deposit></Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Plato Descartable</Name>
+			<Description>Plato plástico mediano</Description>
+			<Code>platoDescartable</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Colador de Pasta</Name>
+			<Description>Colador plástico mediano</Description>
+			<Code>coladorDePasta</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Botella Chica</Name>
+			<Description>Botella plástica de agua</Description>
+			<Code>botellaChica</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name></Name>
+			<Description></Description>
+			<Code></Code>
+			<Deposits>
+				<Deposit></Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Rollo Grande</Name>
+			<Description>Rollo de cartón de film</Description>
+			<Code>rolloGrande</Code>
+			<Deposits>
+				<Deposit>depositoPapel</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Rollo Chico</Name>
+			<Description>Rollo de cartón de papel higiénico</Description>
+			<Code>rolloChico</Code>
+			<Deposits>
+				<Deposit>depositoPapel</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Sobre Grande</Name>
+			<Description>Sobre de papel madera</Description>
+			<Code>sobreGrande</Code>
+			<Deposits>
+				<Deposit>depositoPapel</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Regla Grande</Name>
+			<Description>Regla de plástico</Description>
+			<Code>reglaGrande</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+	
+		<Element>
+			<Name>Vaso Medidor Grande</Name>
+			<Description>Vaso plástico medidor de líquidos y sólidos</Description>
+			<Code>vasoMedidorGrande</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Transportador</Name>
+			<Description>Transportador plástico que no tenga regla en centímetros</Description>
+			<Code>transportador</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Escuadra</Name>
+			<Description>Escuadra plástica</Description>
+			<Code>escuadra</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Botella Grande</Name>
+			<Description>Botella grande de plástico de agua</Description>
+			<Code>botellaGrande</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Botella Mediana Blanca</Name>
+			<Description>Botella de plástico blanca</Description>
+			<Code>botellaMedianaBlanca</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Botella Mediana Roja</Name>
+			<Description>Botella de plástico roja</Description>
+			<Code>botellaMedianaRoja</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Lata de Tomates</Name>
+			<Description>Lata metálica sin etiqueta</Description>
+			<Code>lataDeTomate</Code>
+			<Deposits>
+				<Deposit>depositoMetal</Deposit>
+			</Deposits>
+		</Element>
+		
+		<Element>
+			<Name>Envase de Postre Chico</Name>
+			<Description>Envase de Danonino rojo</Description>
+			<Code>envaseDePostreChico</Code>
+			<Deposits>
+				<Deposit>depositoPlastico</Deposit>
+			</Deposits>
+		</Element>
+	
+	</Elements>
+</PrototypeData>
+

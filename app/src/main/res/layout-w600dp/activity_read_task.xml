@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EEFF"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rLbutton">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/rLUpperText">
+
+            <TextView
+                android:id="@+id/upperText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:textAlignment="gravity"
+                android:layout_margin="15dp"
+                android:text="@string/read_indicated_task"
+                android:textSize="30sp"/>
+
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:id="@+id/warningImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/upperText"
+                android:layout_toLeftOf="@+id/upperText"
+                android:src="@drawable/alert" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rLUpperText"
+            android:layout_margin="25dp">
+            <ImageView
+                android:id="@+id/nextTaskMap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/imageMapDesc"></ImageView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rLUpperText"
+            android:id="@+id/rLLowerText">
+
+            <TextView
+                android:id="@+id/lowerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:text="@string/go_to_poi_and_read_code"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rLbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp">
+        <Button
+            android:id="@+id/scanButton"
+            style="@style/bigButton_text"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/blue_button"
+            android:onClick="scannerOnClick"
+            android:text="@string/scan"
+            android:width="220dp"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/lectura_amarillo"
+            android:textSize="30sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
