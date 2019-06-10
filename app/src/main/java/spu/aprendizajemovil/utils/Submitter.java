@@ -22,7 +22,7 @@ import java.util.Date;
 
 public class Submitter {
 
-    static String name = "logActividades"+DateFormat.getDateTimeInstance().format(new Date())+".txt";
+    static String name = "logActividades"+new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(new Date())+".txt";
 
     static File log = new File(Environment.getExternalStorageDirectory()+"/ResuelvoExplorando/RegistroDeUso",name);
 
@@ -45,6 +45,7 @@ public class Submitter {
         }
         try {
             delete();
+            log.getParentFile().mkdirs();
             log.createNewFile();
         } catch (IOException e) {
             e.printStackTrace();

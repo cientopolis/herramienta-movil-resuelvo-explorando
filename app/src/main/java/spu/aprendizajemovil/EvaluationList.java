@@ -95,7 +95,7 @@ public class EvaluationList extends Activity
 	public void sentAMail (View view){
 		Intent emailIntent = new Intent(Intent.ACTION_SEND);
 		emailIntent .setType("vnd.android.cursor.dir/email");
-		emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"alejandrablliteras@gmail.com"});
+		emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"iam@lifia.info.unlp.edu.ar"});
 		emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Registro de eventos");
 		emailIntent.putExtra(Intent.EXTRA_TEXT, "Gracias por compartir su desempeño");
 		File filelocation = new File(Environment.getExternalStorageDirectory()+"/ResuelvoExplorando/RegistroDeUso/"+getName());

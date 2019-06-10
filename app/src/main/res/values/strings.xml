@@ -53,7 +53,7 @@
     <string name="check_performance_or_end_game">Ahora deberán elegir entre ver su desempeño en la actividad o salir del mismo.</string>
     <string name="check_performance">Ver Desempeño</string>
     <string name="exit_game">Salir de la actividad</string>
-    <string name="exit_game_confirmation_text">¿Están seguros de querer salir dla actividad? En caso de responder que Si, no podrán volver a ver su desempeño en el mismo."</string>
+    <string name="exit_game_confirmation_text">¿Están seguros de querer salir de la actividad? En caso de responder que Si, no podrán volver a ver su desempeño en el mismo."</string>
     <string name="where_do_you_want_to_go">¿A dónde quieren ir?</string>
     <string name="read_code_is_invalid">El código leido es inválido.</string>
     <string name="ok">OK</string>
